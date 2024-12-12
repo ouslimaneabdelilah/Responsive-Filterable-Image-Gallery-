@@ -1,0 +1,63 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+body{
+
+    padding: 10px;
+    background-color:black;
+}
+.wrapper{
+    display: flex;
+    margin: 100px auto;
+    
+}
+.wrapper nav{
+    display: flex;
+    justify-content: left;
+}
+nav .items{
+    display: flex;
+    max-width: 700px;
+
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+}
+nav .items .item{
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px rgb(237, 147, 37) solid;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+nav .items .active,nav .items .item:hover{
+    color:black;
+    background-color: rgb(219, 120, 0);
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+.photos .image{
+    padding: 7px;
+    width: calc(100% /5);
+}
+.photos .image img{
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.photos .image :hover img{
+    transform: scale(1.1);
+}
